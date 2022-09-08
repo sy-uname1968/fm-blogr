@@ -24,6 +24,7 @@ nav {
         justify-content: space-between;
         align-items: center;
         margin-bottom: 105px;
+        z-index: 11;
 
         nav {
             // display: none;
@@ -51,6 +52,7 @@ nav {
         padding: 0 10px;
         opacity: 0.7;
         margin-bottom: 23px;
+        // z-index: -1;
     }
 
     p {
