@@ -1,0 +1,87 @@
+
+
+.phones-block {
+    background-image: url(../images/bg-pattern-circles.svg);
+    background-position: left 50% bottom 259px;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    // height: 625px;
+    margin-top: 270px;
+    // margin-top: 240px;
+    background-color: $white;
+    // opacity: 0.5;
+    border-radius: 0 86px 0 86px;
+    background-color: rgb(58, 61, 92);
+    position: relative;
+    padding: 225px 31px 115px 31px;
+    padding-top: 225px;
+
+    img {
+        // width: calc(552px * 0.68);
+        // height: calc(579px * 0.68);
+        width: clamp(552px * 0.68, 552px * 100vw / 1440px, 552px);
+        height: clamp(579px * 0.68, 579px * 100vw / 1440px, 579px);
+        position: absolute;
+        top: -190px;
+        left: 0;
+    }
+
+    h2 {
+        text-align: center;
+        color: $white;
+        font-size: 2.3rem;
+        margin-bottom: 25px;
+        // margin-top: 150px;
+    }
+
+    p {
+        text-align: center;
+        letter-spacing: 0.5px;
+        line-height: 1.7;
+        color: $white;
+        opacity: 0.8;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .phones-block {
+        margin-top: 47px;
+        background-position: left -205px top -490px;
+        background-size: 1000px;
+        // background-position: center;
+        // background-size: cover;
+        height: 400px;
+        // opacity: 0.5;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // margin-top: 0px;
+        padding-top: 0;
+
+        img {
+            // width: 552px;
+            // height: 579px;
+            position: absolute;
+            top: -67px;
+            // left: 125px;
+            left: clamp(0px, 100vw - 1440px + 125px, 125px);
+        }
+
+        .phones-block-content {
+            grid-column: 2 / 3;
+            margin-left: 16px;
+            padding-top: clamp(30px, 10vw - 144px + 115px , 115px);
+            padding-right: clamp(40px, 100vw - 1440px + 120px, 120px);
+
+            h2, p {
+                text-align: left;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+                letter-spacing: -1.5px;
+            }
+        }
+    }
+    
+}
